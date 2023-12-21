@@ -12,24 +12,10 @@ int main()
 	string textline;
 	dest << "-------------------- BOOM ---------------------"
 		 << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
-	getline(source, textline);
-	cout << textline << "\n";
+	while (getline(source, textline))
+	{
+		dest << textline << "\n";
+	}
 	dest << "-------------------- HA!! ---------------------";
 	source.close();
 	dest.close();
